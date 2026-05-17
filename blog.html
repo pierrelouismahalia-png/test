@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blogue MDPL Immigration — Actualités, conseils et guides pratiques sur l'immigration canadienne : permis d'études, résidence permanente, citoyenneté et plus.">
+  <title>Blogue Immigration Canada — MDPL Immigration</title>
+  <link rel="canonical" href="https://www.mdplimmigration.com/blog.html">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    .blog-page-grid { display:grid; grid-template-columns:1fr 300px; gap:56px; align-items:start; }
+    .blog-list { display:flex; flex-direction:column; gap:32px; }
+    .blog-list-card { display:grid; grid-template-columns:240px 1fr; gap:28px; background:var(--white); border:1px solid var(--border); border-radius:var(--radius-md); overflow:hidden; transition:var(--transition); }
+    .blog-list-card:hover { box-shadow:var(--shadow-md); border-color:transparent; transform:translateY(-3px); }
+    .blog-list-img { height:180px; overflow:hidden; background:var(--light-grey); }
+    .blog-list-img img { width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease; }
+    .blog-list-card:hover .blog-list-img img { transform:scale(1.06); }
+    .blog-list-body { padding:28px 28px 28px 0; display:flex; flex-direction:column; justify-content:center; }
+    .blog-cat-pill { display:inline-flex; align-items:center; gap:6px; background:rgba(192,57,43,0.1); color:var(--red); padding:4px 12px; border-radius:20px; font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; margin-bottom:10px; }
+    .blog-list-body h3 { font-size:1.2rem; margin-bottom:10px; line-height:1.35; }
+    .blog-list-body h3 a { color:var(--text-dark); }
+    .blog-list-body h3 a:hover { color:var(--red); }
+    .blog-list-body p { font-size:.88rem; color:var(--text-light); line-height:1.65; margin-bottom:16px; }
+    .blog-footer { display:flex; align-items:center; justify-content:space-between; }
+    .blog-date { font-size:.78rem; color:var(--text-light); }
+    .blog-sidebar-card { background:var(--off-white); border:1px solid var(--border); border-radius:var(--radius-md); padding:24px; margin-bottom:24px; }
+    .blog-sidebar-card h4 { font-family:var(--font-display); font-size:1rem; font-weight:600; color:var(--text-dark); margin-bottom:16px; padding-bottom:12px; border-bottom:2px solid var(--red); }
+    .blog-categories { display:flex; flex-direction:column; gap:8px; }
+    .blog-cat-link { display:flex; align-items:center; justify-content:space-between; padding:8px 12px; border-radius:var(--radius-sm); font-size:.85rem; font-weight:600; color:var(--text-body); transition:var(--transition); }
+    .blog-cat-link:hover { background:var(--white); color:var(--red); }
+    .blog-cat-count { background:var(--border); border-radius:20px; padding:2px 8px; font-size:.72rem; font-weight:700; }
+    .recent-posts { display:flex; flex-direction:column; gap:12px; }
+    .recent-post { display:flex; gap:12px; align-items:flex-start; padding-bottom:12px; border-bottom:1px solid var(--border); }
+    .recent-post:last-child { border-bottom:none; padding-bottom:0; }
+    .recent-post-img { width:64px; height:64px; border-radius:var(--radius-sm); overflow:hidden; flex-shrink:0; }
+    .recent-post-img img { width:100%; height:100%; object-fit:cover; }
+    .recent-post-title { font-size:.82rem; font-weight:700; color:var(--text-dark); line-height:1.35; margin-bottom:4px; }
+    .recent-post-title a:hover { color:var(--red); }
+    .recent-post-date { font-size:.72rem; color:var(--text-light); }
+    .blog-search { display:flex; gap:8px; }
+    .blog-search input { flex:1; background:var(--white); border:1px solid var(--border); border-radius:var(--radius-sm); padding:10px 14px; font-family:var(--font-body); font-size:.85rem; color:var(--text-dark); }
+    .blog-search input:focus { outline:none; border-color:var(--red); }
+    .blog-search button { background:var(--red); color:var(--white); border:none; border-radius:var(--radius-sm); padding:10px 14px; cursor:pointer; transition:var(--transition); }
+    .blog-search button:hover { background:var(--red-hover); }
+    @media(max-width:900px){.blog-page-grid{grid-template-columns:1fr}.blog-list-card{grid-template-columns:1fr}.blog-list-img{height:220px}.blog-list-body{padding:24px}}
+    @media(max-width:600px){.blog-list-card{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<div class="top-bar"><div class="container"><div class="top-bar-left"><a href="tel:4509770066"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 013 1.18 2 2 0 014.11.01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>450 977-0066</a><div class="top-bar-sep"></div><a href="mailto:info@mdplimmigration.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>info@mdplimmigration.com</a></div><div class="top-bar-right"><a href="https://services3.cic.gc.ca/ecas/security.do?app=ecas&lang=fr" target="_blank" rel="noopener">Portail client</a><div class="top-bar-sep"></div><div class="lang-toggle"><span class="lang-btn active">FR</span><span class="lang-btn">EN</span></div></div></div></div>
+
+<nav class="navbar" role="navigation" aria-label="Navigation principale"><div class="container"><div class="nav-inner">
+  <a href="index.html" class="logo"><div class="logo-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" width="24" height="24"><rect x="5" y="28" width="30" height="4" rx="1" fill="white"/><rect x="8" y="10" width="4" height="20" rx="1" fill="white"/><rect x="18" y="10" width="4" height="20" rx="1" fill="white"/><rect x="28" y="10" width="4" height="20" rx="1" fill="white"/><rect x="5" y="7" width="30" height="4" rx="1" fill="white" opacity="0.7"/></svg></div><div class="logo-text"><span class="logo-name">M.D.P.L.</span><span class="logo-sub">Immigration</span></div></a>
+  <ul class="nav-links" role="list"><li><a href="index.html" class="nav-link">Accueil</a></li><li><a href="a-propos.html" class="nav-link">À propos</a></li><li class="nav-item"><a href="#" class="nav-link" aria-haspopup="true">Spécialités <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6,9 12,15 18,9"/></svg></a><div class="dropdown" role="menu"><a href="specialites/permis-etudes.html"><span class="dropdown-arrow"></span>Permis d'études</a><a href="specialites/permis-travail.html"><span class="dropdown-arrow"></span>Permis de travail</a><a href="specialites/residence-permanente.html"><span class="dropdown-arrow"></span>Résidence permanente</a><a href="specialites/citoyennete.html"><span class="dropdown-arrow"></span>Citoyenneté</a><a href="specialites/reunification-familiale.html"><span class="dropdown-arrow"></span>Réunification familiale</a><a href="specialites/permis-sejour.html"><span class="dropdown-arrow"></span>Permis de séjour</a></div></li><li><a href="blog.html" class="nav-link active">Blogue</a></li><li><a href="notre-vision.html" class="nav-link">Notre vision</a></li><li><a href="nous-contacter.html" class="nav-link">Nous contacter</a></li></ul>
+  <div class="nav-cta"><a href="https://mdplimmigration.setmore.com/r3731150a46bca7648410cd349784a64f6980c813" target="_blank" rel="noopener" class="nav-rendez-vous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Rendez-vous</a><button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button></div>
+</div></div></nav>
+<div class="mobile-nav" id="mobileNav"><ul class="mobile-nav-links"><li><a href="index.html" class="mobile-nav-link">Accueil</a></li><li><a href="a-propos.html" class="mobile-nav-link">À propos</a></li><li><a href="blog.html" class="mobile-nav-link">Blogue</a></li><li><a href="nous-contacter.html" class="mobile-nav-link">Nous contacter</a></li></ul><div class="mobile-nav-cta"><a href="https://mdplimmigration.setmore.com/r3731150a46bca7648410cd349784a64f6980c813" class="btn btn-primary" target="_blank" rel="noopener">Prendre rendez-vous</a></div></div>
+
+<main id="main-content">
+<section class="hero page-hero">
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=1400&q=80&auto=format&fit=crop');" role="img" aria-label="Bureau avec ordinateur et cahier pour écrire"></div>
+  <div class="container"><div class="hero-content"><div class="hero-box reveal">
+    <p class="hero-tag">Blogue MDPL Immigration</p>
+    <h1>Actualités et conseils en immigration canadienne</h1>
+    <span class="dotted-sep"></span>
+    <p class="hero-desc">Restez informé des dernières nouvelles, des changements législatifs et de nos conseils d'experts.</p>
+  </div></div></div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="blog-page-grid">
+      <!-- Articles -->
+      <div class="blog-list">
+
+        <article class="blog-list-card reveal">
+          <div class="blog-list-img">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=480&q=80&auto=format&fit=crop" alt="Étudiants internationaux" loading="lazy" width="480" height="320">
+          </div>
+          <div class="blog-list-body">
+            <span class="blog-cat-pill">Permis d'études</span>
+            <h3><a href="blog/permis-etudes-2025.html">Nouvelles règles pour les permis d'études en 2025 : ce qu'il faut savoir</a></h3>
+            <p>Les changements récents apportés par IRCC impactent directement les étudiants internationaux. Découvrez les nouvelles exigences et comment s'y préparer pour maximiser vos chances d'approbation.</p>
+            <div class="blog-footer">
+              <time class="blog-date" datetime="2025-01-15">15 janvier 2025</time>
+              <a href="blog/permis-etudes-2025.html" class="blog-read-more">Lire l'article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14" aria-hidden="true"><polyline points="9,18 15,12 9,6"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-list-card reveal reveal-delay-1">
+          <div class="blog-list-img">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=480&q=80&auto=format&fit=crop" alt="Famille heureuse" loading="lazy" width="480" height="320">
+          </div>
+          <div class="blog-list-body">
+            <span class="blog-cat-pill">Résidence permanente</span>
+            <h3><a href="blog/entree-express-points.html">Entrée express : comment maximiser vos points CRS en 2025</a></h3>
+            <p>Le système de points CRS détermine vos chances d'obtenir une invitation à présenter une demande de résidence permanente. Voici des stratégies concrètes pour optimiser votre profil et augmenter votre score.</p>
+            <div class="blog-footer">
+              <time class="blog-date" datetime="2025-01-08">8 janvier 2025</time>
+              <a href="blog/entree-express-points.html" class="blog-read-more">Lire l'article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14" aria-hidden="true"><polyline points="9,18 15,12 9,6"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-list-card reveal reveal-delay-2">
+          <div class="blog-list-img">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=480&q=80&auto=format&fit=crop" alt="Travail au Canada" loading="lazy" width="480" height="320">
+          </div>
+          <div class="blog-list-body">
+            <span class="blog-cat-pill">Permis de travail</span>
+            <h3><a href="blog/permis-travail-ferme.html">Permis de travail fermé vs. ouvert : quelle est la différence ?</a></h3>
+            <p>Comprendre les distinctions entre permis de travail fermé et ouvert est essentiel pour planifier votre arrivée sur le marché du travail canadien. Cet article démystifie les deux types et vous aide à choisir.</p>
+            <div class="blog-footer">
+              <time class="blog-date" datetime="2024-12-20">20 décembre 2024</time>
+              <a href="blog/permis-travail-ferme.html" class="blog-read-more">Lire l'article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14" aria-hidden="true"><polyline points="9,18 15,12 9,6"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-list-card reveal">
+          <div class="blog-list-img">
+            <img src="https://images.unsplash.com/photo-1477322524744-0eece9e79640?w=480&q=80&auto=format&fit=crop" alt="Famille réunie" loading="lazy" width="480" height="320">
+          </div>
+          <div class="blog-list-body">
+            <span class="blog-cat-pill">Réunification familiale</span>
+            <h3><a href="specialites/reunification-familiale.html">Parrainer son conjoint au Canada : guide complet 2025</a></h3>
+            <p>Le parrainage d'un conjoint ou d'un partenaire de fait est l'une des demandes d'immigration les plus fréquentes. Voici tout ce que vous devez savoir pour préparer un dossier solide.</p>
+            <div class="blog-footer">
+              <time class="blog-date" datetime="2024-12-05">5 décembre 2024</time>
+              <a href="specialites/reunification-familiale.html" class="blog-read-more">Lire l'article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14" aria-hidden="true"><polyline points="9,18 15,12 9,6"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-list-card reveal reveal-delay-1">
+          <div class="blog-list-img">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=480&q=80&auto=format&fit=crop" alt="Personnes discutant d'un dossier" loading="lazy" width="480" height="320">
+          </div>
+          <div class="blog-list-body">
+            <span class="blog-cat-pill">Citoyenneté</span>
+            <h3><a href="specialites/citoyennete.html">Test de citoyenneté canadienne : comment se préparer efficacement</a></h3>
+            <p>Le test de citoyenneté peut sembler intimidant, mais avec la bonne préparation, vous pouvez le réussir haut la main. Voici nos conseils et ressources pour vous préparer.</p>
+            <div class="blog-footer">
+              <time class="blog-date" datetime="2024-11-18">18 novembre 2024</time>
+              <a href="specialites/citoyennete.html" class="blog-read-more">Lire l'article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14" aria-hidden="true"><polyline points="9,18 15,12 9,6"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Sidebar blogue -->
+      <aside style="position:sticky;top:100px;">
+        <div class="blog-sidebar-card">
+          <h4>Rechercher</h4>
+          <div class="blog-search">
+            <input type="search" placeholder="Mot-clé..." aria-label="Rechercher dans le blogue">
+            <button type="button" aria-label="Rechercher"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+          </div>
+        </div>
+
+        <div class="blog-sidebar-card">
+          <h4>Catégories</h4>
+          <div class="blog-categories">
+            <a href="#" class="blog-cat-link">Permis d'études <span class="blog-cat-count">3</span></a>
+            <a href="#" class="blog-cat-link">Permis de travail <span class="blog-cat-count">4</span></a>
+            <a href="#" class="blog-cat-link">Résidence permanente <span class="blog-cat-count">5</span></a>
+            <a href="#" class="blog-cat-link">Citoyenneté <span class="blog-cat-count">2</span></a>
+            <a href="#" class="blog-cat-link">Réunification familiale <span class="blog-cat-count">3</span></a>
+            <a href="#" class="blog-cat-link">Actualités IRCC <span class="blog-cat-count">6</span></a>
+          </div>
+        </div>
+
+        <div class="blog-sidebar-card">
+          <h4>Articles récents</h4>
+          <div class="recent-posts">
+            <div class="recent-post">
+              <div class="recent-post-img"><img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=128&q=70" alt="" loading="lazy" width="64" height="64"></div>
+              <div><p class="recent-post-title"><a href="blog/permis-etudes-2025.html">Nouvelles règles permis d'études 2025</a></p><p class="recent-post-date">15 janvier 2025</p></div>
+            </div>
+            <div class="recent-post">
+              <div class="recent-post-img"><img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=128&q=70" alt="" loading="lazy" width="64" height="64"></div>
+              <div><p class="recent-post-title"><a href="blog/entree-express-points.html">Maximiser vos points CRS en 2025</a></p><p class="recent-post-date">8 janvier 2025</p></div>
+            </div>
+            <div class="recent-post">
+              <div class="recent-post-img"><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=128&q=70" alt="" loading="lazy" width="64" height="64"></div>
+              <div><p class="recent-post-title"><a href="blog/permis-travail-ferme.html">Permis fermé vs. ouvert</a></p><p class="recent-post-date">20 décembre 2024</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-sidebar-card" style="background:var(--navy);border-color:transparent;">
+          <h4 style="color:white;border-bottom-color:rgba(255,255,255,0.2);">Consultation gratuite</h4>
+          <p style="font-size:.85rem;color:rgba(255,255,255,0.7);margin-bottom:16px;line-height:1.6;">Vous avez des questions sur votre situation d'immigration ? Parlez à un expert.</p>
+          <a href="nous-contacter.html" class="btn btn-primary" style="width:100%;justify-content:center;">Nous contacter</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container"><div class="footer-grid">
+  <div class="footer-brand"><a href="index.html" class="logo"><div class="logo-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" width="22" height="22"><rect x="5" y="28" width="30" height="4" rx="1" fill="white"/><rect x="8" y="10" width="4" height="20" rx="1" fill="white"/><rect x="18" y="10" width="4" height="20" rx="1" fill="white"/><rect x="28" y="10" width="4" height="20" rx="1" fill="white"/><rect x="5" y="7" width="30" height="4" rx="1" fill="white" opacity="0.7"/></svg></div><div class="logo-text"><span class="logo-name">M.D.P.L.</span><span class="logo-sub">Immigration</span></div></a><p class="footer-hours">Lundi au vendredi<br>9h00 à 17h00</p><div class="footer-socials"><a href="#" class="social-btn" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="#" class="social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a></div></div>
+  <div class="footer-col"><h5>Immigration</h5><ul><li><a href="specialites/permis-etudes.html">Permis d'études</a></li><li><a href="specialites/permis-travail.html">Permis de travail</a></li><li><a href="specialites/residence-permanente.html">Résidence permanente</a></li><li><a href="specialites/citoyennete.html">Citoyenneté</a></li><li><a href="specialites/reunification-familiale.html">Réunification familiale</a></li><li><a href="specialites/permis-sejour.html">Permis de séjour</a></li></ul></div>
+  <div class="footer-col"><h5>Liens utiles</h5><ul><li><a href="https://www.ielts.org/" target="_blank" rel="noopener">Test IELTS</a></li><li><a href="https://services3.cic.gc.ca/ecas/security.do?app=ecas&lang=fr" target="_blank" rel="noopener">Statut de demande</a></li><li><a href="nous-contacter.html">Nous contacter</a></li></ul></div>
+  <div class="footer-col footer-newsletter"><h5>Infolettre</h5><p>Nouvelles en immigration canadienne.</p><form class="newsletter-form" novalidate><input type="email" placeholder="Votre courriel" required aria-label="Courriel"><button type="submit">S'abonner</button></form></div>
+</div></div><div class="container"><div class="footer-bottom"><p>&copy; 2025 M.D.P.L. Immigration. Tous droits réservés.</p><nav class="footer-bottom-links"><a href="#">Confidentialité</a><a href="#">Conditions</a><a href="nous-contacter.html">Contact</a></nav></div></div></footer>
+<script src="js/main.js" defer></script>
+</body></html>
